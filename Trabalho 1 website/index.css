@@ -1,0 +1,434 @@
+/* Reset básico e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header - Cabeçalho */
+header {
+    background: #ecf0f1;
+    color: #2c3e50;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 2px solid #bdc3c7;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(52, 73, 94, 0.1);
+    color: #2c3e50;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #34495e;
+    margin-bottom: 1rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+}
+
+/* Indicador do jogo atual */
+.jogo-atual {
+    background: #d5dbdb;
+    color: #2c3e50;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: 2px solid #95a5a6;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Navegação */
+nav {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+nav li {
+    background: #ecf0f1;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav li:hover {
+    background: #d5dbdb;
+    border-color: #95a5a6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    display: block;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #1a252f;
+    background: rgba(52, 73, 94, 0.05);
+}
+
+nav strong {
+    background: #e8f4f8;
+    color: #2c3e50;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    display: block;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid #3498db;
+    box-shadow: 0 2px 6px rgba(52, 152, 219, 0.2);
+}
+
+/* Conteúdo Principal */
+main {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    line-height: 1.8;
+}
+
+/* Títulos */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #3498db;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+}
+
+h3 {
+    color: #34495e;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Listas */
+ul, ol {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.3rem;
+}
+
+/* Links no conteúdo */
+main a {
+    color: #3498db;
+    text-decoration: none;
+    border-bottom: 1px dotted #3498db;
+    transition: all 0.3s ease;
+}
+
+main a:hover {
+    color: #2980b9;
+    border-bottom: 1px solid #2980b9;
+}
+
+/* Texto em destaque */
+strong {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+em {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+/* Citações */
+blockquote {
+    background: #ecf0f1;
+    border-left: 4px solid #3498db;
+    margin: 1.5rem 0;
+    padding: 1rem 1.5rem;
+    font-style: italic;
+    color: #555;
+    border-radius: 0 5px 5px 0;
+}
+
+blockquote p {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #3498db;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tr:hover {
+    background: #f8f9fa;
+}
+
+/* Linhas horizontais */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #3498db, transparent);
+    margin: 1.5rem 0;
+}
+
+/* Footer - Rodapé */
+footer {
+    background: #ecf0f1;
+    color: #2c3e50;
+    padding: 1.5rem;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #bdc3c7;
+}
+
+footer h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-left: 4px solid #3498db;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+
+footer li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+footer small {
+    display: block;
+    line-height: 1.6;
+    color: #34495e;
+    font-size: 0.9rem;
+}
+
+footer em {
+    color: #3498db;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin-bottom: 0.5rem;
+    }
+    
+    main {
+        padding: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    table {
+        font-size: 0.9rem;
+    }
+    
+    th, td {
+        padding: 0.5rem;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+    
+    table {
+        font-size: 0.8rem;
+    }
+    
+    th, td {
+        padding: 0.3rem;
+    }
+    
+    blockquote {
+        margin: 1rem 0;
+        padding: 0.8rem 1rem;
+    }
+}
+
+/* Animações suaves */
+* {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Melhorias de acessibilidade */
+:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+/* Efeito hover sutil para elementos interativos */
+a:focus,
+a:hover {
+    transform: translateY(-1px);
+}
+
+/* Sombra sutil para dar profundidade */
+main,
+nav,
+header,
+footer {
+    transition: box-shadow 0.3s ease;
+}
+
+main:hover,
+nav:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+/* ===== Imagens dos jogos ===== */
+.game-figure {
+  margin: 0 0 1.5rem 0;
+  background: #fff;
+  border: 1px solid #e1e5ea;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.game-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.game-figure figcaption {
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  color: #34495e;
+  border-top: 1px solid #eef2f6;
+  text-align: center;
+}
