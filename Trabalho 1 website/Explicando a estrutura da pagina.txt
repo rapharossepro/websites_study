@@ -1,0 +1,198 @@
+ESTRUTURA BÁSICA DO HTML
+<!DOCTYPE html>
+
+O que é: Declaração que informa ao navegador que estamos usando HTML5
+Por que usar: Garante que a página seja interpretada corretamente pelos navegadores modernos
+
+<html lang="pt-br">
+
+O que é: Tag principal que envolve todo o conteúdo da página
+lang="pt-br": Especifica que o idioma é português brasileiro
+Importância: Ajuda leitores de tela e motores de busca
+
+<head>
+
+O que é: Seção com informações sobre a página (metadados)
+Conteúdo: Não aparece visualmente, mas é essencial para o funcionamento
+Inclui: título, codificação, viewport, etc.
+
+<meta charset="UTF-8">
+
+O que é: Define a codificação de caracteres
+Por que UTF-8: Suporta acentos, símbolos especiais e caracteres de qualquer idioma
+
+<meta name="viewport">
+
+O que é: Configura como a página é exibida em dispositivos móveis
+Resultado: Site responsivo que se adapta ao tamanho da tela
+
+<title>
+
+O que é: Título que aparece na aba do navegador
+Exemplo: "Xadrez - Desbravando os Tabuleiros"
+
+
+🎯 ELEMENTOS ESTRUTURAIS SEMÂNTICOS
+<body>
+
+O que é: Contém todo o conteúdo visível da página
+Tudo dentro dele: Aparece na tela para o usuário
+
+<header>
+
+O que é: Cabeçalho da página
+Nosso uso: Título principal + subtítulo + linha horizontal
+Semântica: Identifica o topo/introdução da página
+
+<nav>
+
+O que é: Seção de navegação
+Nosso uso: Menu com links para outras páginas
+Semântica: Facilita acessibilidade e SEO
+
+<main>
+
+O que é: Conteúdo principal da página
+Regra: Só pode existir um <main> por página
+Nosso uso: Todo o conteúdo histórico dos jogos
+
+<section>
+
+O que é: Seção temática do conteúdo
+Nosso uso: Agrupa todo o conteúdo histórico
+Semântica: Organiza logicamente o conteúdo
+
+<footer>
+
+O que é: Rodapé da página
+Nosso uso: Créditos acadêmicos e informações finais
+Semântica: Identifica informações complementares
+
+
+📝 ELEMENTOS DE TEXTO E HIERARQUIA
+Tags H (H1, H2, H3)
+
+<h1>: Título principal da página (mais importante)
+<h2>: Títulos de seções principais
+<h3>: Subtítulos dentro das seções
+Hierarquia: h1 > h2 > h3 > h4 > h5 > h6
+SEO: Motores de busca usam para entender a estrutura
+
+<p>
+
+O que é: Parágrafo de texto
+Nosso uso: Todo o texto corrido das explicações
+Formatação: Cria espaçamento automático entre blocos de texto
+
+<em>
+
+O que é: Ênfase (texto em itálico)
+Nosso uso: Nomes de jogos em outras línguas ("Chaturanga", "Weiqi")
+Semântica: Indica importância, não apenas estilo visual
+
+<strong>
+
+O que é: Importância forte (texto em negrito)
+Nosso uso: Palavras-chave importantes, datas, conceitos
+Diferença: <b> é só visual, <strong> tem significado semântico
+
+
+📋 ELEMENTOS DE LISTA
+<ul> (Unordered List)
+
+O que é: Lista não ordenada (com marcadores)
+Nosso uso: Listas de características, curiosidades, benefícios
+Aparência: Bullet points (●)
+
+<ol> (Ordered List)
+
+O que é: Lista ordenada (numerada)
+Quando usar: Quando a ordem importa (passos, ranking)
+Aparência: 1, 2, 3...
+
+<li> (List Item)
+
+O que é: Item individual de uma lista
+Uso: Sempre dentro de <ul> ou <ol>
+
+
+🔗 ELEMENTOS DE NAVEGAÇÃO
+<a href="">
+
+O que é: Link (âncora)
+href: Atributo que define o destino do link
+Exemplos:
+
+href="index.html" → outra página
+href="#inicio" → seção na mesma página
+href="mailto:email@exemplo.com" → email
+
+
+
+
+🎨 ELEMENTOS ESPECIAIS
+<hr>
+
+O que é: Linha horizontal (Horizontal Rule)
+Nosso uso: Separar seções visualmente
+Aparência: Uma linha fina atravessando a página
+
+<blockquote>
+
+O que é: Citação em bloco
+Nosso uso: Frases famosas sobre os jogos
+Formatação: Recuado e estilizado diferentemente
+
+<table>
+
+O que é: Tabela para dados estruturados
+Nosso uso: Comparação dos jogos na página principal
+Componentes: <tr> (linha), <th> (cabeçalho), <td> (célula)
+
+<small>
+
+O que é: Texto menor
+Nosso uso: Informações de copyright no rodapé
+Semântica: Indica texto de menor importância
+
+<address>
+
+O que é: Informações de contato
+Uso semântico: Identifica dados de contato para leitores de tela
+
+
+🎯 POR QUE ESSA ESTRUTURA É IMPORTANTE?
+1. Acessibilidade
+
+Leitores de tela navegam pela estrutura semântica
+Usuários com deficiência conseguem entender melhor o conteúdo
+
+2. SEO (Otimização para Motores de Busca)
+
+Google usa a estrutura HTML para entender o conteúdo
+Tags semânticas melhoram o ranking de busca
+
+3. Manutenibilidade
+
+Código organizado é mais fácil de editar e atualizar
+Outros desenvolvedores entendem rapidamente
+
+4. Padrões Web
+
+Segue as boas práticas recomendadas pelo W3C
+Compatibilidade com todos os navegadores modernos
+
+5. Sem CSS = HTML Puro Funcional
+
+O site funciona perfeitamente mesmo sem estilização
+Demonstra que HTML bem estruturado é autoexplicativo
+
+
+🏆 RESUMO PARA APRESENTAÇÃO
+"Utilizamos HTML5 semântico puro, onde cada elemento tem um propósito específico:
+
+Estrutura clara: header → nav → main → footer
+Hierarquia lógica: h1 > h2 > h3 para organizar conteúdo
+Navegação intuitiva: links entre todas as páginas
+Acessibilidade: estrutura que funciona para todos os usuários
+Código limpo: fácil manutenção e compreensão"**
